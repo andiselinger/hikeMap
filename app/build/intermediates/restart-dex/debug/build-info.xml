@@ -5,27 +5,55 @@
     density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="5307929789637"
+    timestamp="3535113772260"
     token="2702906521040742147"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="235" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="56" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="30" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
     <artifact
-        location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
+    <build
+        timestamp="620575757263"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="1669519229384"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="2600985766008"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="3451018535900"
+        verifier="METHOD_DELETED" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
     <build
         timestamp="14051153463383"
         verifier="FULL_BUILD_REQUESTED" >

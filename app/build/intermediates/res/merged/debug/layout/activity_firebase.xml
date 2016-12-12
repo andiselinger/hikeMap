@@ -39,12 +39,17 @@
                 android:layout_height="wrap_content"
                 android:hint="Name of the route" />
 
+            <Button
+                android:id="@+id/saveRoutePrivate"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Upload as private" />
 
             <Button
-                android:id="@+id/saveRoute"
-                android:layout_width="140dp"
+                android:id="@+id/publishRoute"
+                android:layout_width="105dp"
                 android:layout_height="wrap_content"
-                android:text="Upload Route" />
+                android:text="Publish route" />
         </LinearLayout>
 
         <View
@@ -55,11 +60,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="Load predefined route:" />
+            android:text="Load public route:" />
 
         <View
             android:layout_width="1dp"
             android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutPublicRoutes">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Load private route:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutPrivateRoutes">
+
+        </LinearLayout>
 
     </LinearLayout>
 
