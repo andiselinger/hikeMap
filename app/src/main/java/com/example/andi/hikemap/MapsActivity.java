@@ -235,7 +235,7 @@ public class MapsActivity extends FragmentActivity
                 }
                 time += 15000;
                 Log.d("DirectionExample", "Going for... " + time + ": " + mVoiceOutputOn);
-                mHandlerSpeakDirection.postDelayed(this, 5000);
+                mHandlerSpeakDirection.postDelayed(this, 15000);
             }
         }, 10000);
 
