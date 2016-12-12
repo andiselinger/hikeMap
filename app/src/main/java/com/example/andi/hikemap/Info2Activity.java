@@ -1,6 +1,7 @@
 package com.example.andi.hikemap;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -28,7 +29,7 @@ public class Info2Activity extends Activity {
         if (view == null) {
             Log.e("...", "asdfadsafasdfasfnull");
         } else {
-            view.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            view.setBackgroundColor(Color.WHITE);
         }
         getActionBar().setDisplayHomeAsUpEnabled(true);
         extractMarkerData();

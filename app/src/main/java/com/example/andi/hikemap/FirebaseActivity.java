@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -203,8 +204,9 @@ public class FirebaseActivity extends Activity {
 
                 }
             });
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(300, 70);
-            layoutParams.setMargins(5, 3, 0, 0); // left, top, right, bottom
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT);
+            layoutParams.setMargins(5, 5, 5, 5); // left, top, right, bottom
             button.setLayoutParams(layoutParams);
             linearLayout.addView(button);
         }
