@@ -5,29 +5,33 @@
     density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="2534480535431"
-    token="2702906521040742147" >
+    timestamp="4036847854491"
+    token="2702906521040742147"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="566" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="65" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
+
+    <artifact
+        location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="2454409755255"
+        timestamp="4036847854491"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="2534480535431" />
 
 </instant-run>
