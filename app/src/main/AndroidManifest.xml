@@ -62,14 +62,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.andi.hikemap.MapsActivity" />
         </activity>
-        <activity
-            android:name=".Info2Activity"
-            android:label="@string/title_activity_info2"
-            android:parentActivityName=".MapsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.andi.hikemap.MapsActivity" />
-        </activity>
     </application>
 
 </manifest>

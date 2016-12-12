@@ -38,7 +38,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import android.support.v4.content.PermissionChecker;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -54,10 +53,7 @@ import static com.example.andi.hikemap.GlobalDefinitions.MARKER_DISTANCES;
 import static com.example.andi.hikemap.GlobalDefinitions.MARKER_LATITUDES;
 import static com.example.andi.hikemap.GlobalDefinitions.MARKER_LONGITUDES;
 import static com.example.andi.hikemap.GlobalDefinitions.SAVED_DATA;
-import static com.example.andi.hikemap.R.id.distance;
-import static com.example.andi.hikemap.R.id.distance_left;
 import static com.example.andi.hikemap.R.id.map;
-import static java.security.AccessController.getContext;
 
 
 public class MapsActivity extends FragmentActivity
@@ -121,7 +117,7 @@ public class MapsActivity extends FragmentActivity
 
 
         if (savedInstanceState != null) {
-            Toast.makeText(this, "restored map", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "restored map", Toast.LENGTH_LONG).show();
         }
 
         // Create an instance of GoogleAPIClient.
@@ -264,7 +260,7 @@ public class MapsActivity extends FragmentActivity
             mMarkerList.get(j).remove();
             mMarkerList.remove(j);
         }
-        Toast.makeText(this, "Remove Markers!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Remove Markers!", Toast.LENGTH_SHORT).show();
         drawUserDefinedRoute();
         setInfoNextMarker();
     }
@@ -306,18 +302,18 @@ public class MapsActivity extends FragmentActivity
             }
         });
 
-        mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
-
-            @Override
-            public void onMapLongClick(LatLng point) {
-
-
-                Toast.makeText(getApplicationContext(),
-                        "New long click added@" + point.toString(), Toast.LENGTH_LONG)
-                        .show();
-
-            }
-        });
+//        mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+//
+//            @Override
+//            public void onMapLongClick(LatLng point) {
+//
+//
+//                Toast.makeText(getApplicationContext(),
+//                        "New long click added@" + point.toString(), Toast.LENGTH_LONG)
+//                        .show();
+//
+//            }
+//        });
 
         mMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
             @Override

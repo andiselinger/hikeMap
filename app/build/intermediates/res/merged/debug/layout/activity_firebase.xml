@@ -15,17 +15,17 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:text="Upload your route to the cloud or load a predefined route." />
+
         <View
             android:layout_width="1dp"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,22 +44,22 @@
                 android:id="@+id/saveRoute"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="Upload Route"
-                 />
+                android:text="Upload Route" />
         </LinearLayout>
 
         <View
             android:layout_width="1dp"
-            android:layout_height="25dp"/>
+            android:layout_height="25dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="Load predefined route:" />
+
         <View
             android:layout_width="1dp"
-            android:layout_height="15dp"/>
+            android:layout_height="15dp" />
 
     </LinearLayout>
 

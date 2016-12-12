@@ -188,8 +188,6 @@ public class FirebaseActivity extends Activity {
             LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
             Button button = new Button(this);
             button.setText(route.routeName);
-            button.setTextColor(getResources().getColor(R.color.colorBlack));
-            button.setBackgroundColor(getResources().getColor(R.color.colorGrey));
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -207,7 +205,9 @@ public class FirebaseActivity extends Activity {
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT);
             layoutParams.setMargins(5, 5, 5, 5); // left, top, right, bottom
+
             button.setLayoutParams(layoutParams);
+            button.setPadding(10, 10, 10, 10);
             linearLayout.addView(button);
         }
     }

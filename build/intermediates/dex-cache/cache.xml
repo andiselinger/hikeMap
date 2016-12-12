@@ -385,7 +385,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6aa40a8477529b0d72cca7ab21cea56ccc50f7f2">
+        sha1="0fc9c136cfc56393fe8655d348e8389abd1765e2">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dc1b08b2fb281d2121580e122bb97abe716bc2c0/classes.dex" />
     </item>
     <item
