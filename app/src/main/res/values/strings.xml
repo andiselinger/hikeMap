@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="locationAccessError">"You need to allow access to the devices' location in order to make the app work!"</string>
+    <string name="distance">"Total: 0.000 km"</string>
+    <string name="deleteLastMarker">"Undo"</string>
+    <string name="navigationModeToggleStopNav">Edit</string>
+    <string name="navigationModeToggleStartNav">Done</string>
+    <string name="audioOn">Audio</string>
+    <string name="audioOff">Mute</string>
+    <string name="firebase">Firebase</string>
+    <string name="title_activity_firebase">FirebaseActivity</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "149300334539",
+    "firebase_url": "https://hikemap-34d4e.firebaseio.com",
+    "project_id": "hikemap-34d4e",
+    "storage_bucket": "hikemap-34d4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149300334539:android:6a229aeed78316da",
+        "android_client_info": {
+          "package_name": "com.example.andi.hikemap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149300334539-08jn3l56qo69725mg2c11sic63ho2biu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andi.hikemap",
+            "certificate_hash": "F2330851159485013F0EDF18DF5D1D11714D7CE3"
+          }
+        },
+        {
+          "client_id": "149300334539-ngki5vihi8o9o6nsesepqs8kcjg4a2j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149300334539-ngki5vihi8o9o6nsesepqs8kcjg4a2j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

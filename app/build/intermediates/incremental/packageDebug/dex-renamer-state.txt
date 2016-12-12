@@ -1,0 +1,7 @@
+#Mon Dec 12 11:01:56 CET 2016
+base.0=/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_779eb7b3c944f8097dabe45fdb2ae3c1c919e1a6
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dc1b08b2fb281d2121580e122bb97abe716bc2c0/classes.dex
+base.1=/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dc1b08b2fb281d2121580e122bb97abe716bc2c0
+file.0=/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_779eb7b3c944f8097dabe45fdb2ae3c1c919e1a6/classes.dex

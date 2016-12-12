@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.andi.hikemap.MapsActivity"
+        tools:ignore="MergeRootFrame">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.andi.myfirstapp.MapsActivity" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/distance"
+            android:textSize="22sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@color/colorBackground" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/arrowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/arrow"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:onClick="startInfoActivity"
+        android:background="@drawable/ic_info_outline_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/mapVisibility"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|right"
+        android:onClick="toggleMapVisibility"
+        android:visibility="invisible"
+        android:background="@drawable/ic_visibility_off_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/distance_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="invisible"
+        android:background="@color/colorBackground"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="100 m " />
+
+</FrameLayout>

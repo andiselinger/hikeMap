@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="mdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="2534480535431"
+    token="2702906521040742147" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <build
+        timestamp="2454409755255"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="2534480535431" />
+
+</instant-run>

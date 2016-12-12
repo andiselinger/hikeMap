@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_keyboard_arrow_down_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_keyboard_arrow_down_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_undo_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_undo_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_add_location_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_add_location_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_mode_edit_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_mode_edit_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_info_outline_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_visibility_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_visibility_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_volume_off_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_volume_off_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_edit_location_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_edit_location_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_keyboard_arrow_up_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_keyboard_arrow_up_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_visibility_off_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_visibility_off_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_near_me_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_near_me_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_volume_up_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_volume_up_black_24dp.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_done_black_24dp.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/drawable-mdpi/ic_done_black_24dp.png"
+    }
+]
