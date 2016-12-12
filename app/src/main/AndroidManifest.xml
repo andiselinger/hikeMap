@@ -9,13 +9,14 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+
     <application
+        android:theme="@android:style/Theme.Holo.Light"
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:name="android.support.multidex.MultiDexApplication">
-
+        android:supportsRtl="true">
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -29,16 +30,17 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <!--<receiver android:name=".MapsActivity$MediaBroadcastReceiver">-->
-        <!--<intent-filter-->
-        <!--android:enabled="true"-->
-        <!--android:exported="true">-->
-        <!--<action android:name="android.intent.action.MEDIA_BUTTON" />-->
-        <!--</intent-filter>-->
-        <!--</receiver>-->
+        <!-- <receiver android:name=".MapsActivity$MediaBroadcastReceiver"> -->
+        <!-- <intent-filter -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <action android:name="android.intent.action.MEDIA_BUTTON" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
 
         <activity
             android:name=".MapsActivity"
+
             android:label="@string/title_activity_maps"
             android:launchMode="singleInstance"
             android:taskAffinity="">
@@ -55,6 +57,14 @@
         <activity
             android:name=".FirebaseActivity"
             android:label="@string/title_activity_firebase"
+            android:parentActivityName=".MapsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andi.hikemap.MapsActivity" />
+        </activity>
+        <activity
+            android:name=".Info2Activity"
+            android:label="@string/title_activity_info2"
             android:parentActivityName=".MapsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

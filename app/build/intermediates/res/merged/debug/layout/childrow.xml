@@ -5,6 +5,7 @@
     android:stretchColumns="1"
     android:paddingTop="0dip"
     android:layout_gravity="top"
+    android:backgroundTint="@color/colorWhite"
 
     > <!--   android:background="@drawable/bar_bg" -->
 
@@ -21,6 +22,7 @@
             android:layout_height="wrap_content"
             android:stretchColumns="1"
             android:paddingTop="0dip"
+            android:backgroundTint="@color/colorWhite"
             android:layout_gravity="top">
 
             <TableRow>
@@ -29,6 +31,7 @@
                     android:id="@+id/text1"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
                     android:layout_weight="1"
                     android:layout_gravity="left|center_vertical"
                     android:textSize="15sp"
@@ -43,6 +46,7 @@
                     android:id="@+id/text"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
                     android:layout_weight="1"
                     android:layout_gravity="left|center_vertical"
                     android:textSize="15sp"

@@ -9,43 +9,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-
         >
 
         <Button
             android:id="@+id/buttonTopLeft"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:drawableStart="@drawable/ic_undo_black_24dp"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorDarkGrey"
             android:text="@string/deleteLastMarker" />
 
 
         <Button
             android:id="@+id/buttonTopCenter"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorDarkGrey"
             android:text="@string/firebase" />
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
         <Button
             android:id="@+id/start_stop_navigation"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/colorDarkGrey"
             android:drawableEnd="@drawable/ic_near_me_black_24dp"
             android:text="@string/navigationModeToggleStartNav" />
 
 
     </LinearLayout>
-
-
-    <!--<TextView-->
-    <!--android:id="@+id/distance"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="fill_parent"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:layout_toLeftOf="@id/buttonTopLeft"-->
-    <!--android:layout_toRightOf="@id/start_stop_navigation"-->
-    <!--android:padding="10dp"-->
-    <!--android:text="@string/distance"-->
-    <!--android:textSize="12sp" />-->
 
 </RelativeLayout>

@@ -40,6 +40,7 @@ public class ExpandableListMain extends ExpandableListActivity {
         super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
+
         Resources res = this.getResources();
         //Drawable devider = res.getDrawable(R.drawable.line);
 
@@ -55,6 +56,7 @@ public class ExpandableListMain extends ExpandableListActivity {
 
         // Adding ArrayList data to ExpandableListView values
         loadHosts(dummyList);
+
 
     }
 

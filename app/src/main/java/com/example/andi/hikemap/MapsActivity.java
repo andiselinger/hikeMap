@@ -1,6 +1,7 @@
 package com.example.andi.hikemap;
 
 import android.app.ActionBar;
+import android.app.ExpandableListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -204,10 +205,11 @@ public class MapsActivity extends FragmentActivity
             public void run() {
                 if (mVoiceOutputOn && mNavigationModeOn) {
                     mTextToSpeech.speak(String.format("%.0f", calcDistanceToMarker(mMarkerList.get(0))) + "meters", TextToSpeech.QUEUE_ADD, null);
+
+                    time += 30000;
+                    Log.d("TimerExample", "Going for... " + time + ": ");
+                    mHandlerSpeakDistance.postDelayed(this, 30000);
                 }
-                time += 30000;
-                Log.d("TimerExample", "Going for... " + time + ": ");
-                mHandlerSpeakDistance.postDelayed(this, 30000);
             }
         }, 10000);
         mHandlerSpeakDirection.postDelayed(new Runnable() {
@@ -812,17 +814,22 @@ public class MapsActivity extends FragmentActivity
      * @param latLng new position
      */
     private void addPosition(LatLng latLng) {
-        Marker marker = mMap.addMarker(new MarkerOptions().
-                position(latLng).
-                draggable(true).
-                title("Marker No.: " + (++mMarkerNo)).
-                zIndex(mZIndex = mZIndex - 1.f)  // WTF it should be + 1.f but that doesn't work
-        );
+        try {
+            Marker marker = mMap.addMarker(new MarkerOptions().
+                    position(latLng).
+                    draggable(true).
+                    title("Marker No.: " + (++mMarkerNo)).
+                    zIndex(mZIndex = mZIndex - 1.f)  // WTF it should be + 1.f but that doesn't work
+            );
 
-        marker.showInfoWindow();
-        mMarkerList.add(marker);
+            marker.showInfoWindow();
+            mMarkerList.add(marker);
+            setCameraToMarker(marker);
+        } catch (Exception e) {
+            Log.e(TAG, "Exception: " + e.toString());
+        }
         drawUserDefinedRoute();
-        setCameraToMarker(marker);
+
     }
 
     private float calcTotalDistance() {

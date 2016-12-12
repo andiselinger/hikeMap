@@ -1,4 +1,4 @@
-#Mon Dec 12 11:28:17 CET 2016
+#Mon Dec 12 14:43:40 CET 2016
 base.0=/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_779eb7b3c944f8097dabe45fdb2ae3c1c919e1a6
 renamed.1=classes.dex
 renamed.0=classes2.dex

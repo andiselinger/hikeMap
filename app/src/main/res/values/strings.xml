@@ -8,6 +8,7 @@
     <string name="navigationModeToggleStartNav">Done</string>
     <string name="audioOn">Audio</string>
     <string name="audioOff">Mute</string>
-    <string name="firebase">Firebase</string>
-    <string name="title_activity_firebase">FirebaseActivity</string>
+    <string name="firebase">Load/Store</string>
+    <string name="title_activity_firebase">Load/Store Route</string>
+    <string name="title_activity_info2">Info2Activity</string>
 </resources>

@@ -187,6 +187,8 @@ public class FirebaseActivity extends Activity {
             LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
             Button button = new Button(this);
             button.setText(route.routeName);
+            button.setTextColor(getResources().getColor(R.color.colorBlack));
+            button.setBackgroundColor(getResources().getColor(R.color.colorGrey));
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

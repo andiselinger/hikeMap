@@ -220,6 +220,10 @@
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/layout/activity_info2.xml",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/src/main/res/layout/activity_info2.xml"
+    },
+    {
         "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/layout/cast_tracks_chooser_dialog_row_layout.xml",
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/layout/cast_tracks_chooser_dialog_row_layout.xml"
     },

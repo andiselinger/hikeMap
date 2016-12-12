@@ -64,12 +64,12 @@
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_24.png"
     },
     {
-        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png",
-        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png"
-    },
-    {
         "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00013.png",
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_expand_00013.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
         "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00010.png",
@@ -300,12 +300,12 @@
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00009.png",
-        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
-    },
-    {
         "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_grey600_36.png",
         "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_grey600_36.png"
+    },
+    {
+        "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00009.png",
+        "source": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
     },
     {
         "merged": "/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_grey600.png",
