@@ -201,11 +201,11 @@ public class MapsActivity extends FragmentActivity
             public void run() {
                 if (mVoiceOutputOn && mNavigationModeOn) {
                     mTextToSpeech.speak(String.format("%.0f", calcDistanceToMarker(mMarkerList.get(0))) + "meters", TextToSpeech.QUEUE_ADD, null);
-
+                }
                     time += 30000;
                     Log.d("TimerExample", "Going for... " + time + ": ");
                     mHandlerSpeakDistance.postDelayed(this, 30000);
-                }
+
             }
         }, 10000);
         mHandlerSpeakDirection.postDelayed(new Runnable() {
@@ -213,21 +213,29 @@ public class MapsActivity extends FragmentActivity
 
             @Override
             public void run() {
-                float angle = -mMap.getCameraPosition().bearing;
-                String msg = "";
-                if (angle < -90.f && angle > -135.f) {
-                    msg = "Turn right";
-                } else if (angle < -225.f && angle > -270.f) {
-                    msg = "Turn left";
-                } else if (angle >= -225.f && angle <= -135.f) {
-                    msg = "Turn around";
-                }
+
                 if (mVoiceOutputOn && mNavigationModeOn) {
+                    Location locationNextMarker = new Location(LocationManager.GPS_PROVIDER);
+                    locationNextMarker.setLatitude(mMarkerList.get(0).getPosition().latitude);
+                    locationNextMarker.setLongitude(mMarkerList.get(0).getPosition().longitude);
+                    float angle = mLastLocation.bearingTo(locationNextMarker) - mLastLocation.getBearing();
+                    if (angle < 0) {
+                        angle += 360.f;
+                    }
+                    String msg = "";
+                    if (angle > 90.f && angle < 135.f) {
+                        msg = "Turn right";
+                    } else if (angle > 225.f && angle < 270.f) {
+                        msg = "Turn left";
+                    } else if (angle <= 270.f && angle >= 135.f) {
+                        msg = "Turn around";
+                    }
+
                     mTextToSpeech.speak(msg, TextToSpeech.QUEUE_ADD, null);
                 }
                 time += 15000;
-                Log.d("DirectionExample", "Going for... " + time + ": " + -mMap.getCameraPosition().bearing);
-                mHandlerSpeakDirection.postDelayed(this, 15000);
+                Log.d("DirectionExample", "Going for... " + time + ": " + mVoiceOutputOn);
+                mHandlerSpeakDirection.postDelayed(this, 5000);
             }
         }, 10000);
 
@@ -686,7 +694,11 @@ public class MapsActivity extends FragmentActivity
         // Set audio On/off button
         Button buttonTopLeft = (Button) findViewById(R.id.buttonTopLeft);
         buttonTopLeft.setText(R.string.audioOn);
-        buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_up_black_24dp, 0, 0, 0);
+        if (mVoiceOutputOn) {
+            buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_up_black_24dp, 0, 0, 0);
+        } else {
+            buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_off_black_24dp, 0, 0, 0);
+        }
 
         // Set text view Walked
         TextView textView = (TextView) findViewById(R.id.distance);
