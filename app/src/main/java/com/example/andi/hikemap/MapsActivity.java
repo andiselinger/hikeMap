@@ -1,8 +1,9 @@
 package com.example.andi.hikemap;
 
 import android.app.ActionBar;
-import android.app.ExpandableListActivity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
@@ -15,7 +16,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.provider.Settings.Secure;
 
 
 import com.google.android.gms.common.ConnectionResult;
@@ -32,10 +32,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-import android.support.v4.content.PermissionChecker;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -115,6 +112,7 @@ public class MapsActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        enableGPS();
 
         if (savedInstanceState != null) {
             //Toast.makeText(this, "restored map", Toast.LENGTH_LONG).show();
@@ -151,8 +149,10 @@ public class MapsActivity extends FragmentActivity
         });
 
         try {
-            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
-                    mGoogleApiClient);
+            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            if (mLastLocation == null) {
+                mLastLocation = new Location(LocationManager.GPS_PROVIDER);
+            }
         } catch (SecurityException e) {
             Log.e(TAG, "Location security exception");
         }
@@ -522,8 +522,14 @@ public class MapsActivity extends FragmentActivity
                 == PackageManager.PERMISSION_GRANTED) {
             mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
                     mGoogleApiClient);
-            if (mMap == null) return;
-            if (mLastLocation == null) Log.e(TAG, "1mLastLocation is null");
+            if (mMap == null) {
+                Log.e(TAG, "1mMap is null");
+                return;
+            }
+            if (mLastLocation == null) {
+                Log.e(TAG, "1mLastLocation is null");
+                mLastLocation = new Location(LocationManager.GPS_PROVIDER);
+            }
             LatLng latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         }
@@ -678,81 +684,92 @@ public class MapsActivity extends FragmentActivity
             return;
         }
 
-        mNavigationModeOn = !mNavigationModeOn;
-
-
-        if (mNavigationModeOn) {
+        if (!mNavigationModeOn) {
             startNavigation();
         } else {
-
             stopNavigation();
         }
     }
 
 
     private void startNavigation() {
-        // Set audio On/off button
-        Button buttonTopLeft = (Button) findViewById(R.id.buttonTopLeft);
-        buttonTopLeft.setText(R.string.audioOn);
-        if (mVoiceOutputOn) {
-            buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_up_black_24dp, 0, 0, 0);
+
+        final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+
+            // Set audio On/off button
+            Button buttonTopLeft = (Button) findViewById(R.id.buttonTopLeft);
+            buttonTopLeft.setText(R.string.audioOn);
+            if (mVoiceOutputOn) {
+                buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_up_black_24dp, 0, 0, 0);
+            } else {
+                buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_off_black_24dp, 0, 0, 0);
+            }
+
+            // Set text view Walked
+            TextView textView = (TextView) findViewById(R.id.distance);
+            float distance = calcWalkedDistance();
+            textView.setText("Walked: " + String.format("%.3f", distance / 1000.) + " km");
+
+            // Set EditRoute Button)
+            Button buttonStartStopNav = (Button) findViewById(R.id.start_stop_navigation);
+            buttonStartStopNav.setText(R.string.navigationModeToggleStopNav);
+            buttonStartStopNav.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_edit_location_black_24dp, 0);
+
+            // Show arrow
+            ImageView arrow = (ImageView) findViewById(R.id.arrowView);
+            arrow.setVisibility(View.VISIBLE);
+
+            // Adjust arrow
+            if (mMarkerList.size() > 0) {
+                Location locationNextMarker = new Location(LocationManager.GPS_PROVIDER);
+                locationNextMarker.setLatitude(mMarkerList.get(0).getPosition().latitude);
+                locationNextMarker.setLongitude(mMarkerList.get(0).getPosition().longitude);
+                float arrowAngle = 0.0f;
+                if (mLastLocation != null) {
+                    arrowAngle = mLastLocation.bearingTo(locationNextMarker) - mLastLocation.getBearing();
+                }
+                arrow.setRotation(arrowAngle);
+            }
+
+            // Show distance left TextView
+            TextView distanceLeft = (TextView) findViewById(R.id.distance_left);
+            distanceLeft.setVisibility(View.VISIBLE);
+            // Calculate distance to first  marker
+            ///
+            distance = calcDistanceToMarker(mMarkerList.get(0));
+            distanceLeft.setText(String.format("%.0f", distance) + " m");
+
+
+            // Set button mapVisibility to visible
+            ImageButton buttonMapVisibility = (ImageButton) findViewById(R.id.mapVisibility);
+            buttonMapVisibility.setVisibility(View.VISIBLE);
+
+
+            // Set markers as non-draggable
+            for (Marker marker : mMarkerList) {
+                marker.setDraggable(false);
+            }
+            setInfoNextMarker();
+
+            // Adjust map perspective
+            if (mLastLocation == null) {
+                Log.e(TAG, "1mLastLocation is null");
+                mLastLocation = new Location(LocationManager.GPS_PROVIDER);
+            }
+            LatLng latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
+
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(
+                    new CameraPosition.Builder()
+                            .target(latLng)
+                            .tilt(mInitNavigationModeTilt)
+                            .zoom(mInitNavigationModeZoom)
+                            .bearing(mLastLocation.getBearing())
+                            .build()));
+            mNavigationModeOn = true;
         } else {
-            buttonTopLeft.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_volume_off_black_24dp, 0, 0, 0);
+            enableGPS();
         }
-
-        // Set text view Walked
-        TextView textView = (TextView) findViewById(R.id.distance);
-        float distance = calcWalkedDistance();
-        textView.setText("Walked: " + String.format("%.3f", distance / 1000.) + " km");
-
-        // Set EditRoute Button)
-        Button buttonStartStopNav = (Button) findViewById(R.id.start_stop_navigation);
-        buttonStartStopNav.setText(R.string.navigationModeToggleStopNav);
-        buttonStartStopNav.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_edit_location_black_24dp, 0);
-
-        // Show arrow
-        ImageView arrow = (ImageView) findViewById(R.id.arrowView);
-        arrow.setVisibility(View.VISIBLE);
-
-        // Adjust arrow
-        if (mMarkerList.size() > 0) {
-            Location locationNextMarker = new Location(LocationManager.GPS_PROVIDER);
-            locationNextMarker.setLatitude(mMarkerList.get(0).getPosition().latitude);
-            locationNextMarker.setLongitude(mMarkerList.get(0).getPosition().longitude);
-            float arrowAngle = mLastLocation.bearingTo(locationNextMarker) - mLastLocation.getBearing();
-            arrow.setRotation(arrowAngle);
-        }
-
-        // Show distance left TextView
-        TextView distanceLeft = (TextView) findViewById(R.id.distance_left);
-        distanceLeft.setVisibility(View.VISIBLE);
-        // Calculate distance to first  marker
-        ///
-        distance = calcDistanceToMarker(mMarkerList.get(0));
-        distanceLeft.setText(String.format("%.0f", distance) + " m");
-
-
-        // Set button mapVisibility to visible
-        ImageButton buttonMapVisibility = (ImageButton) findViewById(R.id.mapVisibility);
-        buttonMapVisibility.setVisibility(View.VISIBLE);
-
-
-        // Set markers as non-draggable
-        for (Marker marker : mMarkerList) {
-            marker.setDraggable(false);
-        }
-        setInfoNextMarker();
-
-        // Adjust map perspective
-        if (mLastLocation == null) Log.e(TAG, "mLastLocation is null");
-        LatLng latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(
-                new CameraPosition.Builder()
-                        .target(latLng)
-                        .tilt(mInitNavigationModeTilt)
-                        .zoom(mInitNavigationModeZoom)
-                        .bearing(mLastLocation.getBearing())
-                        .build()));
     }
 
     private void setInfoNextMarker() {
@@ -803,7 +820,10 @@ public class MapsActivity extends FragmentActivity
             latLng = new LatLng(mMarkerList.get(mMarkerList.size() - 1).getPosition().latitude,
                     mMarkerList.get(mMarkerList.size() - 1).getPosition().longitude);
         } else {
-            if (mLastLocation == null) Log.e(TAG, "3mLastLocation is null");
+            if (mLastLocation == null) {
+                Log.e(TAG, "3mLastLocation is null");
+                mLastLocation = new Location(LocationManager.GPS_PROVIDER);
+            }
             latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
         }
 
@@ -814,6 +834,7 @@ public class MapsActivity extends FragmentActivity
                         .zoom(mInitCreateRouteModeZoom)
                         .bearing(0.f)
                         .build()));
+        mNavigationModeOn = false;
     }
 
     /**
@@ -894,7 +915,7 @@ public class MapsActivity extends FragmentActivity
         float[] results = new float[3];
         if (mLastLocation == null) {
             Log.e(TAG, "4mLastLocation is null");
-            return 0.f;
+            mLastLocation = new Location(LocationManager.GPS_PROVIDER); //return 0.f;
         }
         double latStart = mLastLocation.getLatitude();
         double latEnd = marker.getPosition().latitude;
@@ -987,6 +1008,27 @@ public class MapsActivity extends FragmentActivity
             startActivity(intent);
         } else {
             Toast.makeText(this, "Set markers before having access to more information.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void enableGPS() {
+        final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Your GPS is disabled, enable it?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(@SuppressWarnings("unused") final DialogInterface dialog, @SuppressWarnings("unused") final int id) {
+                            startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(final DialogInterface dialog, @SuppressWarnings("unused") final int id) {
+                            dialog.cancel();
+                        }
+                    });
+            final AlertDialog alert = builder.create();
+            alert.show();
         }
     }
 }
