@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_434d6da23cfcf873014cbe9d3b9daec28a2b0eec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -36,15 +27,6 @@
         revision="25.0.0"
         sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_45895a695704ce6fc3990cc7c8aac15b7f4eeef6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_0c0944f6533f763ad0b43087c123a1f82fb41408/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,48 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_f2d7e44c17fe403f9aff11fa4457aa44180d3795/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_e171a00435e61f3fd02e8bbcb958e591386e95cf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_a276b42ce3e464cc72100875a5630ff385e32644/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_4d60cb7c69029082315ade03e0ccc04e2e216716/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_0969ac9ca78bb061ff418fd33cf417d1f7c28a93/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,15 +75,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_b287cf93468569aeb1b2f895e6198b2221230651/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -153,33 +90,6 @@
         revision="25.0.0"
         sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_a62a378f1d2d9f9a6270d90c312be6d5695f0339/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_b543c214a19f9baf3a296098a6d7e1175aa8b4c8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.0.1_10b5c82ddea2c9bc2dff861f189b6af2de85dffb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_925c5f708deba5f2da9ad9734aec4a3ebbe81ccb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,48 +120,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_db877fe616a0cea40c6678f8044ba234b37f5fed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_416f2e41f7cc1db7e05b5a34a6065bb4acd653f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_3a06bb2fab413133d981dbc7aa98190c918b1772/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_92d1817f9be462a4f46774f3c49730eb5d0ef13f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_7dcadd833963c3fb73e0069bd27aa20b13718738/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -270,6 +144,249 @@
         revision="25.0.0"
         sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_dd3620833d4915b6257d7c88a5f86678ba1374f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_9849a954891f63066838e3a7f8f7643825757d65/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_7a33293395ce085bcbbba5ac849c199e23b012d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_9de489433ddbbdc4e66c009166266719db62131f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_40bf5b14b95f7812ce88c75e78d5561c9fa424c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_05724f032ef667713fa061ad473eb653b09a3698/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_d6a8f01eb01591bbe0eed2a5881844097d7cfaa8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_1fb5343906454e01e9d1a0014de0056e5d3f752d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_8d830e769dd23cf2ef78dfbf3a49d920215675fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.0.1_7e6d135586d1ee3af34a4d769089dd92000e3a71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_e32cc824c872c318bbd6fe91d0b61ab4265bd3eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_98c4586d21d0597c7bcee01645291dce391ceb01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_69360a378c7c7222ec15165b6ebc9a1075e45771/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_9b7f54a663d12e2e7e73a0641ae15f451edc7e57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_434d6da23cfcf873014cbe9d3b9daec28a2b0eec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_0c0944f6533f763ad0b43087c123a1f82fb41408/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_f2d7e44c17fe403f9aff11fa4457aa44180d3795/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_e171a00435e61f3fd02e8bbcb958e591386e95cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_4d60cb7c69029082315ade03e0ccc04e2e216716/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_0969ac9ca78bb061ff418fd33cf417d1f7c28a93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_b287cf93468569aeb1b2f895e6198b2221230651/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_b543c214a19f9baf3a296098a6d7e1175aa8b4c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.0.1_10b5c82ddea2c9bc2dff861f189b6af2de85dffb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_925c5f708deba5f2da9ad9734aec4a3ebbe81ccb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_db877fe616a0cea40c6678f8044ba234b37f5fed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_416f2e41f7cc1db7e05b5a34a6065bb4acd653f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_92d1817f9be462a4f46774f3c49730eb5d0ef13f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_7dcadd833963c3fb73e0069bd27aa20b13718738/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -327,15 +444,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_9849a954891f63066838e3a7f8f7643825757d65/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -351,24 +459,6 @@
         revision="25.0.0"
         sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.0.1_bdebaded0258e81278a87f60a16332a313f20674/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_7a33293395ce085bcbbba5ac849c199e23b012d4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_9de489433ddbbdc4e66c009166266719db62131f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -390,15 +480,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_40bf5b14b95f7812ce88c75e78d5561c9fa424c2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -414,15 +495,6 @@
         revision="25.0.0"
         sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_aa49112d5e4b51547eab3a1cc405ec6690556691/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_05724f032ef667713fa061ad473eb653b09a3698/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -453,15 +525,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_d6a8f01eb01591bbe0eed2a5881844097d7cfaa8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -477,15 +540,6 @@
         revision="25.0.0"
         sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.0.1_5a216e3fc57a711612ee386ff24a825893fb0c88/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_1fb5343906454e01e9d1a0014de0056e5d3f752d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -525,39 +579,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_8d830e769dd23cf2ef78dfbf3a49d920215675fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.0.1_b096872a75d51f36e3e9111d832c1c8254451b4a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.0.1_7e6d135586d1ee3af34a4d769089dd92000e3a71/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_e32cc824c872c318bbd6fe91d0b61ab4265bd3eb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -570,15 +597,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_98c4586d21d0597c7bcee01645291dce391ceb01/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -588,30 +606,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_69360a378c7c7222ec15165b6ebc9a1075e45771/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/andi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
         <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_68fa732ef3fafee7ec657b513dde1867a9ff4ccb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
-        <dex dex="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_9b7f54a663d12e2e7e73a0641ae15f451edc7e57/classes.dex" />
     </item>
     <item
         is-multidex="true"

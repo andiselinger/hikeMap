@@ -5,61 +5,68 @@
     density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="3535113772260"
+    timestamp="37604879486201"
     token="2702906521040742147"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="235" />
+        duration="242" />
     <task
         name="instant-run-dex"
-        duration="56" />
+        duration="108" />
     <task
         name="instant-run-transform"
-        duration="30" />
+        duration="199" />
     <task
         name="verifier"
-        duration="2" />
+        duration="14" />
 
     <artifact
         location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/reload-dex/debug/classes.dex"
         type="RELOAD_DEX" />
 
     <build
-        timestamp="620575757263"
+        timestamp="36548996097639"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1669519229384"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="36670997030224"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/builds/debug/36670997030224/classes.dex"
+            type="RELOAD_DEX" />
     </build>
     <build
-        timestamp="2600985766008"
-        verifier="CLASS_ADDED" >
+        timestamp="36821437500687"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/builds/debug/36821437500687/classes.dex"
+            type="RELOAD_DEX" />
     </build>
     <build
-        timestamp="3451018535900"
-        verifier="METHOD_DELETED" >
+        timestamp="36954418042035"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/builds/debug/36954418042035/classes.dex"
+            type="RELOAD_DEX" />
     </build>
     <build
-        timestamp="14051153463383"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="37447577380789"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/builds/debug/37447577380789/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="37604879486201"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/andi/AndroidStudioProjects/HikeMap/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

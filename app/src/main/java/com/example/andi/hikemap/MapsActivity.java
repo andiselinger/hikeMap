@@ -169,6 +169,13 @@ public class MapsActivity extends FragmentActivity
                 onButtonTopLeftClicked(view);
             }
         });
+        buttonTopLeft.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                onButtonTopLeftLongClicked(view);
+                return true;
+            }
+        });
         Button buttonStartStopNavigation = (Button) findViewById(R.id.start_stop_navigation);
         buttonStartStopNavigation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -288,6 +295,7 @@ public class MapsActivity extends FragmentActivity
         mMap = googleMap;
         mMap.getUiSettings().setMapToolbarEnabled(false); // We don't need a toolbar with navigation and stuff
 
+
         checkForPermission();
 
         if (mMarkerLatitudes != null) {  // We restart the activity and values have been written to the array
@@ -310,28 +318,9 @@ public class MapsActivity extends FragmentActivity
             }
         });
 
-//        mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
-//
-//            @Override
-//            public void onMapLongClick(LatLng point) {
-//
-//
-//                Toast.makeText(getApplicationContext(),
-//                        "New long click added@" + point.toString(), Toast.LENGTH_LONG)
-//                        .show();
-//
-//            }
-//        });
-
         mMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
             @Override
             public void onCameraMove() {
-                // Log.v(TAG, "MOVE LISTENER!");
-                if (mNavigationModeOn || mMarkerList.size() > 0) {
-
-                    ImageView arrow = (ImageView) findViewById(R.id.arrowView);
-
-                }
             }
         });
 
@@ -397,23 +386,12 @@ public class MapsActivity extends FragmentActivity
         // Define a listener that responds to location updates
         mLocationListener = new LocationListener() {
             public void onLocationChanged(Location location) {
-                // Called when a new location is found by the network location provider.
-                /*
-                try {
-                    Location loc = LocationServices.FusedLocationApi.getLastLocation(
-                            mGoogleApiClient);
-                    if (loc != null) mLastLocation = loc;
-                } catch (SecurityException e) {
-                    Toast.makeText(MapsActivity.this, "mLastLocation null", Toast.LENGTH_SHORT).show();
-                    Log.e(TAG, "Location security exception");
-                }
-                */
                 if (mNavigationModeOn && location != null) {
                     mWalkedLocationsList.add(location);
                     mLastLocation = location;
 
                     // Show toasts
-                    //Toast.makeText(MapsActivity.this, "New Loc! # of walked locations: " + mWalkedLocationsList.size(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MapsActivity.this, "New Loc! # of walked locations: " + mWalkedLocationsList.size(), Toast.LENGTH_SHORT).show();
 
                     // Draw walked route
                     drawWalkedRoute();
@@ -523,11 +501,9 @@ public class MapsActivity extends FragmentActivity
             mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
                     mGoogleApiClient);
             if (mMap == null) {
-                Log.e(TAG, "1mMap is null");
                 return;
             }
             if (mLastLocation == null) {
-                Log.e(TAG, "1mLastLocation is null");
                 mLastLocation = new Location(LocationManager.GPS_PROVIDER);
             }
             LatLng latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
@@ -618,6 +594,19 @@ public class MapsActivity extends FragmentActivity
 
     }
 
+
+    public void onButtonTopLeftLongClicked(View view) {
+        if (!mNavigationModeOn) {
+
+            while (mMarkerList.size() > 0) {
+                mMarkerList.get(mMarkerList.size() - 1).remove();
+                mMarkerList.remove(mMarkerList.size() - 1);
+            }
+            mMarkerNo = 0;
+            drawUserDefinedRoute();
+        }
+
+    }
 
     /**
      * This function is called when the button 'Undo' is clicked
@@ -931,7 +920,10 @@ public class MapsActivity extends FragmentActivity
     }
 
     private void setCameraToMarker(Marker marker) {
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()), CAMERA_ANIMATION_TIME_MS, new GoogleMap.CancelableCallback() {
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(
+                marker.getPosition()),
+                CAMERA_ANIMATION_TIME_MS,
+                new GoogleMap.CancelableCallback() {
             @Override
             public void onFinish() {
             }

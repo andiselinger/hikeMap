@@ -1001,8 +1001,8 @@ int drawable notification_bg_low_pressed 0x7f02015c
 int drawable notification_bg_normal 0x7f02015d
 int drawable notification_bg_normal_pressed 0x7f02015e
 int drawable notification_icon_background 0x7f02015f
-int drawable notification_template_icon_bg 0x7f020190
-int drawable notification_template_icon_low_bg 0x7f020191
+int drawable notification_template_icon_bg 0x7f02018f
+int drawable notification_template_icon_low_bg 0x7f020190
 int drawable notification_tile_bg 0x7f020160
 int drawable notify_panel_notification_icon_bg 0x7f020161
 int drawable places_ic_clear 0x7f020162
@@ -1050,7 +1050,6 @@ int drawable quantum_ic_volume_off_grey600_36 0x7f02018b
 int drawable quantum_ic_volume_off_white_36 0x7f02018c
 int drawable quantum_ic_volume_up_grey600_36 0x7f02018d
 int drawable quantum_ic_volume_up_white_36 0x7f02018e
-int drawable white 0x7f02018f
 int id action0 0x7f0e00f4
 int id action_bar 0x7f0e0090
 int id action_bar_activity_content 0x7f0e0000
