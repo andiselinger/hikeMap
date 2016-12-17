@@ -56,45 +56,56 @@
             android:layout_width="1dp"
             android:layout_height="25dp" />
 
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Load public route:" />
+            android:layout_height="match_parent">
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/linearLayoutPublicRoutes">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Load public route:" />
 
-        </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp" />
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="25dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayoutPublicRoutes">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Load private route:" />
+                </LinearLayout>
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="15dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/linearLayoutPrivateRoutes">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Load private route:" />
 
-        </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayoutPrivateRoutes">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
