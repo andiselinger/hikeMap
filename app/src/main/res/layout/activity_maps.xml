@@ -58,7 +58,7 @@
         android:layout_height="45dp"
         android:layout_gravity="bottom|right"
         android:onClick="toggleMapVisibility"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:background="@drawable/ic_visibility_off_black_24dp" />
 
 

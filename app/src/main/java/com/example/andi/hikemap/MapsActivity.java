@@ -652,6 +652,8 @@ public class MapsActivity extends FragmentActivity
     }
 
     public void toggleMapVisibility(View view) {
+        showMapTypeSelectorDialog();
+        /*
         if (mNavigationModeOn) {
             ImageButton buttonMapVisibility = (ImageButton) findViewById(R.id.mapVisibility);
             buttonMapVisibility.setVisibility(View.VISIBLE);
@@ -664,6 +666,8 @@ public class MapsActivity extends FragmentActivity
                 mapFragment.getView().setVisibility(View.INVISIBLE);
             }
         }
+
+        */
     }
 
     public void toggleNavigationMode(View view) {
@@ -793,7 +797,7 @@ public class MapsActivity extends FragmentActivity
 
         // Set button mapVisibility to invisible
         ImageButton buttonMapVisibility = (ImageButton) findViewById(R.id.mapVisibility);
-        buttonMapVisibility.setVisibility(View.INVISIBLE);
+        //buttonMapVisibility.setVisibility(View.INVISIBLE);
 
         // Set map to visible
         mapFragment.getView().setVisibility(View.VISIBLE);
@@ -1023,4 +1027,52 @@ public class MapsActivity extends FragmentActivity
             alert.show();
         }
     }
+
+
+    private static final CharSequence[] MAP_TYPE_ITEMS =
+            {"Road Map", "Hybrid", "Satellite", "Terrain"};
+
+    private void showMapTypeSelectorDialog() {
+        // Prepare the dialog by setting up a Builder.
+        final String fDialogTitle = "Select Map Type";
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(fDialogTitle);
+
+        // Find the current map type to pre-check the item representing the current state.
+        int checkItem = mMap.getMapType() - 1;
+
+        // Add an OnClickListener to the dialog, so that the selection will be handled.
+        builder.setSingleChoiceItems(
+                MAP_TYPE_ITEMS,
+                checkItem,
+                new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int item) {
+                        // Locally create a finalised object.
+
+                        // Perform an action depending on which item was selected.
+                        switch (item) {
+                            case 1:
+                                mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                                break;
+                            case 2:
+                                mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+                                break;
+                            case 3:
+                                mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                                break;
+                            default:
+                                mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                        }
+                        dialog.dismiss();
+                    }
+                }
+        );
+
+        // Build the dialog and show it.
+        AlertDialog fMapTypeDialog = builder.create();
+        fMapTypeDialog.setCanceledOnTouchOutside(true);
+        fMapTypeDialog.show();
+    }
+
 }
